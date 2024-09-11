@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobie_nav"
+    app:startDestination="@id/frame1">
+
+    <fragment
+        android:id="@+id/frame1"
+        android:name="com.example.naive_fragment2.fragmentone"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one"
+
+        >
+        <action
+            android:id="@+id/action_fragmentone_to_fragmenttwo"
+            app:destination="@id/frame2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frame2"
+        android:name="com.example.naive_fragment2.fragmenttwo"
+        android:label="fragment_fragment2"
+        tools:layout="@layout/fragment_two" />
+</navigation>
